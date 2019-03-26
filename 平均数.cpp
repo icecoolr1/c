@@ -1,10 +1,19 @@
-#include <stdio.h> 
-	printf("请输入两个数字：");
-	scanf("%d %d",&a,&b);
-	double c=((a+b)/2.0);
-	printf("两个数的平均数是%f.",c);
-	return 0;
-}
+#include <stdio.h>
 int main()
 {
-	int a,b;
+	int a=0;
+	int count=0;
+	int sum=0;
+
+		scanf("%d",&a);
+	while	(a!=-1){	
+		sum+=a;
+		count ++;
+		scanf("%d",&a); 
+	};
+
+		
+	
+	printf("%f\n",1.0*sum/count);
+	return 0;
+}
